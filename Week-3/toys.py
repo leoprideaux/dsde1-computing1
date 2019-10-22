@@ -61,8 +61,7 @@ def string_repeat(phrase, repeat):
     s = str()
     for sentense in range(repeat):
         s += phrase
-    print(s)    
+    return s  
     # hint: you can add strings together 
     # in order to concatenate them
-
-string_repeat('ha', 3)
+print(string_repeat('wahhh', 12))
