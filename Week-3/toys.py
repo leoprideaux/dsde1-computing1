@@ -64,4 +64,4 @@ def string_repeat(phrase, repeat):
     return s  
     # hint: you can add strings together 
     # in order to concatenate them
-print(string_repeat('wahhh', 12))
+print(string_repeat('hey', 12))
