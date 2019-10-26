@@ -123,9 +123,6 @@ class TestStructures(unittest.TestCase):
         '''
         result = st.merge_dictionaries({"a": 1, "c": 3}, {"b": 2, "d": 4})
         self.assertEqual(result, {"a": 1, "c": 3, "b": 2, "d": 4})
-<<<<<<< HEAD
-=======
->>>>>>> upstream/master
 
 
 if __name__ == '__main__':

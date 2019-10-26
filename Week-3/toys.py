@@ -59,7 +59,7 @@ print(is_even(12))
 def string_repeat(phrase, repeat):
     
     s = str()
-    for sentense in range(repeat):
+    for i in range(repeat):
         s += phrase
     return s  
     # hint: you can add strings together 
