@@ -22,9 +22,9 @@ def part_reverse(the_list, beginning, end):
     end += 1 #includes the end value
    
     if int(end) > int(beginning) and beginning >= 0 and end <= len(the_list):
-        reverselist = the_list[beginning:end]
-        reverselist.reverse()   
-        return reverselist # hint this is incomplete
+        revword = the_list[beginning:end]
+        revword.reverse()   
+        return revword # hint this is incomplete
     else:
         raise ValueError
 
@@ -34,7 +34,7 @@ def part_reverse(the_list, beginning, end):
 # will return [0,1,2,3,3,3,4]. 
 def repeat_at_index(the_list, index):
     i = 0
-    while i < 3:
+    while i < 2:
         the_list.insert(index, the_list[index])
         i += 1
     return the_list
