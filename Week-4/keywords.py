@@ -6,6 +6,7 @@ with default values.
 '''
 
 # Create a function called welcome_message():
+def welcome_message(user_name = None, place = None):
 # if no input argument is provided
 # it returns the string 'Hello and welcome'
 # if a keyword argument called user_name is provided
@@ -14,6 +15,14 @@ with default values.
 # it returns 'Hello and welcome to <place>'
 # if both user_name and place are provided
 # it returns 'Hello, <user_name>, and welcome to <place>
+    if user_name == None and place == None:
+        print('Hello and welcome')
+    elif user_name != None and place == None:
+        print('Hello, ' + user_name + ', and welcome')
+    elif user_name == None and place != None:
+        print('Hello and welcome to ' + place)
+    else:
+        print('Hello, ' + user_name + ' and welcome to ' + place)
 
 
 # Create a function called list_average()

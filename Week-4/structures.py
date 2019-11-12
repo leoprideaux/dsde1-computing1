@@ -22,7 +22,7 @@ def part_reverse(the_list, beginning, end):
     end += 1 #includes the end value
    
     if int(end) > int(beginning) and beginning >= 0 and end <= len(the_list):
-        revword = the_list[beginning:end]
+        revword = the_list[beginning:end-1]
         revword.reverse()   
         return revword # hint this is incomplete
     else:
@@ -48,7 +48,7 @@ def palindrome_word(word):
     revword = ''
     for i in word:
         revword = i + revword  # appending chars in reverse order
-    reversetest = word == revword
+    reversetest = (word == revword)
     return reversetest
 
 # write a function that checks whether the sentence is a palindrome, i.e. it
